@@ -158,14 +158,14 @@ export function Hero() {
           className="flex justify-center space-x-6 mb-12"
         >
           <motion.a
-            href="https://github.com/your-github-username"
+            href="https://github.com/ChungBound"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="p-3 glass-card hover:bg-black/10 dark:hover:bg-white/20 transition-all duration-300"
+            className="p-3 glass-card hover:bg-current/10 hover:shadow-lg transition-all duration-300"
           >
-            <Github size={24} className="text-white" />
+            <Github size={24} className="text-current" />
           </motion.a>
           <motion.a
             href="https://linkedin.com/in/zebang-zhang"
@@ -173,17 +173,17 @@ export function Hero() {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="p-3 glass-card hover:bg-black/10 dark:hover:bg-white/20 transition-all duration-300"
+            className="p-3 glass-card hover:bg-current/10 hover:shadow-lg transition-all duration-300"
           >
-            <Linkedin size={24} className="text-white" />
+            <Linkedin size={24} className="text-current" />
           </motion.a>
           <motion.a
             href="mailto:chungzbound@gmail.com"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="p-3 glass-card hover:bg-black/10 dark:hover:bg-white/20 transition-all duration-300"
+            className="p-3 glass-card hover:bg-current/10 hover:shadow-lg transition-all duration-300"
           >
-            <Mail size={24} className="text-white" />
+            <Mail size={24} className="text-current" />
           </motion.a>
         </motion.div>
 
@@ -192,7 +192,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
           onClick={scrollToAbout}
-          className="glass-card px-6 py-3 rounded-full text-current font-medium hover:bg-black/10 dark:hover:bg-white/20 transition-all duration-300 inline-flex items-center space-x-2 backdrop-blur-lg border border-current/20 mx-auto"
+          className="glass-card px-6 py-3 rounded-full text-current font-medium hover:bg-current/10 hover:shadow-lg transition-all duration-300 inline-flex items-center space-x-2 backdrop-blur-lg border border-current/20 mx-auto"
           whileHover={{
             scale: 1.05,
             backgroundColor: "rgba(255, 255, 255, 0.1)",
@@ -214,12 +214,12 @@ export function Hero() {
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center"
+          className="w-6 h-10 border-2 border-current/50 rounded-full flex justify-center"
         >
           <motion.div
             animate={{ y: [0, 12, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
-            className="w-1 h-3 bg-gray-400 rounded-full mt-2"
+            className="w-1 h-3 bg-current/70 rounded-full mt-2"
           />
         </motion.div>
       </motion.div>

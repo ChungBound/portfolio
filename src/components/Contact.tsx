@@ -38,10 +38,10 @@ export function Contact() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-white mb-4 drop-shadow-xl">
+          <h2 className="text-4xl font-bold text-current mb-4 drop-shadow-xl">
             Get In Touch
           </h2>
-          <p className="text-xl text-white font-light">
+          <p className="text-xl text-current font-light">
             Let's work together on your next project
           </p>
         </motion.div>
@@ -56,10 +56,10 @@ export function Contact() {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-2xl font-semibold text-white mb-6 drop-shadow-lg">
+              <h3 className="text-2xl font-semibold text-current mb-6 drop-shadow-lg">
                 Let's Connect
               </h3>
-              <p className="text-white/80 mb-8 font-light leading-relaxed">
+              <p className="text-current/80 mb-8 font-light leading-relaxed">
                 I'm always interested in new opportunities and exciting
                 projects. Whether you have a question or just want to say hi,
                 feel free to reach out!
@@ -74,12 +74,14 @@ export function Contact() {
                 transition={{ duration: 0.4, delay: 0.1 }}
                 className="flex items-center space-x-4"
               >
-                <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center backdrop-blur-sm">
-                  <Mail className="w-6 h-6 text-white" />
+                <div className="w-12 h-12 bg-current/10 rounded-lg flex items-center justify-center backdrop-blur-sm">
+                  <Mail className="w-6 h-6 text-current" />
                 </div>
                 <div>
-                  <p className="font-medium text-white drop-shadow-sm">Email</p>
-                  <p className="text-white/80 font-light">
+                  <p className="font-medium text-current drop-shadow-sm">
+                    Email
+                  </p>
+                  <p className="text-current/80 font-light">
                     chungzbound@gmail.com
                   </p>
                 </div>
@@ -92,13 +94,13 @@ export function Contact() {
                 transition={{ duration: 0.4, delay: 0.2 }}
                 className="flex items-center space-x-4"
               >
-                <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center backdrop-blur-sm">
-                  <Phone className="w-6 h-6 text-white" />
+                {/* <div className="w-12 h-12 bg-current/10 rounded-lg flex items-center justify-center backdrop-blur-sm">
+                  <Phone className="w-6 h-6 text-current" />
                 </div>
                 <div>
-                  <p className="font-medium text-white drop-shadow-sm">Phone</p>
-                  <p className="text-white/80 font-light">+1 (555) 123-4567</p>
-                </div>
+                  <p className="font-medium text-current drop-shadow-sm">Phone</p>
+                  <p className="text-current/80 font-light">+1 (555) 123-4567</p>
+                </div> */}
               </motion.div>
 
               <motion.div
@@ -108,14 +110,14 @@ export function Contact() {
                 transition={{ duration: 0.4, delay: 0.3 }}
                 className="flex items-center space-x-4"
               >
-                <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center backdrop-blur-sm">
-                  <MapPin className="w-6 h-6 text-white" />
+                <div className="w-12 h-12 bg-current/10 rounded-lg flex items-center justify-center backdrop-blur-sm">
+                  <MapPin className="w-6 h-6 text-current" />
                 </div>
                 <div>
-                  <p className="font-medium text-white drop-shadow-sm">
+                  <p className="font-medium text-current drop-shadow-sm">
                     Location
                   </p>
-                  <p className="text-white/80 font-light">
+                  <p className="text-current/80 font-light">
                     Adelaide SA, Australia
                   </p>
                 </div>
@@ -140,7 +142,7 @@ export function Contact() {
               >
                 <label
                   htmlFor="name"
-                  className="block text-sm font-medium text-white/80 mb-2"
+                  className="block text-sm font-medium text-current/80 mb-2"
                 >
                   Name
                 </label>
@@ -151,7 +153,7 @@ export function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/50 focus:ring-2 focus:ring-white/50 focus:border-white/30 transition-colors duration-200"
+                  className="w-full px-4 py-3 bg-current/10 border border-current/20 rounded-lg text-current placeholder-current/50 focus:ring-2 focus:ring-current/50 focus:border-current/30 transition-colors duration-200"
                   placeholder="Your name"
                 />
               </motion.div>
@@ -164,7 +166,7 @@ export function Contact() {
               >
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-white/80 mb-2"
+                  className="block text-sm font-medium text-current/80 mb-2"
                 >
                   Email
                 </label>
@@ -175,7 +177,7 @@ export function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/50 focus:ring-2 focus:ring-white/50 focus:border-white/30 transition-colors duration-200"
+                  className="w-full px-4 py-3 bg-current/10 border border-current/20 rounded-lg text-current placeholder-current/50 focus:ring-2 focus:ring-current/50 focus:border-current/30 transition-colors duration-200"
                   placeholder="your.email@example.com"
                 />
               </motion.div>
@@ -188,7 +190,7 @@ export function Contact() {
               >
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium text-white/80 mb-2"
+                  className="block text-sm font-medium text-current/80 mb-2"
                 >
                   Message
                 </label>
