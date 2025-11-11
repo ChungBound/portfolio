@@ -63,10 +63,10 @@ export function Experience() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-white mb-4 drop-shadow-xl">
+          <h2 className="text-4xl font-bold text-current mb-4 drop-shadow-xl">
             Work & Research Experience
           </h2>
-          <p className="text-xl text-white font-light">
+          <p className="text-xl text-current font-light">
             My professional journey and research contributions
           </p>
         </motion.div>
@@ -77,7 +77,7 @@ export function Experience() {
           <div className="absolute left-1/2 transform -translate-x-0.5 w-0.5 bg-gradient-to-b from-blue-400 via-purple-400 to-pink-400 h-full opacity-60" />
 
           {/* Timeline items container with scroll */}
-          <div className="space-y-16 max-h-[80vh] overflow-y-auto glass-card border border-white/10 rounded-2xl p-8 shadow-2xl bg-white/5 backdrop-blur-lg scrollbar-thin scrollbar-thumb-white/40 scrollbar-track-transparent scrollbar-thumb-rounded-full scrollbar-track-rounded-full hover:scrollbar-thumb-white/60 transition-all duration-300 scrollbar-gutter-stable">
+          <div className="space-y-16 max-h-[75vh] overflow-y-auto glass-card border border-current/10 rounded-2xl p-6 shadow-2xl bg-white/5 backdrop-blur-lg scrollbar-thin scrollbar-thumb-current/40 scrollbar-track-transparent scrollbar-thumb-rounded-full scrollbar-track-rounded-full hover:scrollbar-thumb-current/60 transition-all duration-300 scrollbar-gutter-stable">
             {experiences.map((exp, index) => (
               <motion.div
                 key={exp.title}
@@ -107,21 +107,20 @@ export function Experience() {
                   }`}
                 >
                   <motion.div
-                    whileHover={{ scale: 1.02 }}
-                    className="glass-card p-6 rounded-xl hover:bg-white/10 transition-all duration-300"
+                    className="glass-card p-6 rounded-xl hover:bg-current/15 hover:scale-[1.02] hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200 ease-out cursor-pointer"
                   >
                     <div
                       className={`mb-4 ${
                         index % 2 === 0 ? "md:text-right" : "md:text-left"
                       }`}
                     >
-                      <h3 className="text-xl font-semibold text-white drop-shadow-lg mb-1">
+                      <h3 className="text-xl font-semibold text-current drop-shadow-lg mb-1">
                         {exp.title}
                       </h3>
-                      <p className="text-white/90 font-medium drop-shadow-sm text-lg">
+                      <p className="text-current/90 font-medium drop-shadow-sm text-lg">
                         {exp.company}
                       </p>
-                      <span className="text-white/75 font-light text-sm">
+                      <span className="text-current/75 font-light text-sm">
                         {exp.period}
                       </span>
                     </div>
@@ -146,10 +145,10 @@ export function Experience() {
                           }}
                           className="flex items-start space-x-2"
                         >
-                          <span className="text-white/70 mt-1 flex-shrink-0">
+                          <span className="text-current/70 mt-1 flex-shrink-0">
                             •
                           </span>
-                          <span className="text-white font-light leading-relaxed text-sm">
+                          <span className="text-current font-light leading-relaxed text-sm">
                             {item}
                           </span>
                         </motion.li>
@@ -175,17 +174,16 @@ export function Experience() {
 
               <div className="w-full md:w-5/12 md:pr-8 md:text-right">
                 <motion.div
-                  whileHover={{ scale: 1.02 }}
-                  className="glass-card p-6 rounded-xl hover:bg-white/10 transition-all duration-300"
+                  className="glass-card p-6 rounded-xl hover:bg-current/15 hover:scale-[1.02] hover:-translate-y-0.5 transition-all duration-200 ease-out cursor-pointer"
                 >
                   <div className="mb-4 md:text-right">
-                    <h3 className="text-xl font-semibold text-white drop-shadow-lg mb-1">
+                    <h3 className="text-xl font-semibold text-current drop-shadow-lg mb-1">
                       Research Achievements
                     </h3>
-                    <p className="text-white/90 font-medium drop-shadow-sm text-lg">
+                    <p className="text-current/90 font-medium drop-shadow-sm text-lg">
                       University of Adelaide
                     </p>
-                    <span className="text-white/75 font-light text-sm">
+                    <span className="text-current/75 font-light text-sm">
                       2024 - 2025
                     </span>
                   </div>
@@ -195,7 +193,7 @@ export function Experience() {
                       <span className="text-green-400 mt-1 flex-shrink-0">
                         🏆
                       </span>
-                      <span className="text-white/80 font-light leading-relaxed text-sm">
+                      <span className="text-current/80 font-light leading-relaxed text-sm">
                         <strong>SecuFlow Miner</strong> - Awarded School of
                         Computer and Mathematical Sciences Software Engineering
                         Prize for enterprise repository security analysis system
@@ -205,7 +203,7 @@ export function Experience() {
                       <span className="text-blue-400 mt-1 flex-shrink-0">
                         📄
                       </span>
-                      <span className="text-white/80 font-light leading-relaxed text-sm">
+                      <span className="text-current/80 font-light leading-relaxed text-sm">
                         <strong>Context-AI Tunes</strong> - Published research
                         paper on AI-generated music effectiveness for stress
                         reduction (HCII Conference)
@@ -215,7 +213,7 @@ export function Experience() {
                       <span className="text-purple-400 mt-1 flex-shrink-0">
                         🧠
                       </span>
-                      <span className="text-white/80 font-light leading-relaxed text-sm">
+                      <span className="text-current/80 font-light leading-relaxed text-sm">
                         <strong>NeuroFlip Reader</strong> - Brain-computer
                         interface enabling users with disabilities to flip
                         digital book pages using brainwave signals

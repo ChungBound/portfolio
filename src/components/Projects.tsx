@@ -65,16 +65,16 @@ export function Projects() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
-          {projects.map((project, index) => (
+        <div className="max-h-[65vh] overflow-y-auto glass-card border border-current/10 rounded-2xl p-6 shadow-2xl bg-white/5 backdrop-blur-lg scrollbar-thin scrollbar-thumb-current/40 scrollbar-track-transparent scrollbar-thumb-rounded-full scrollbar-track-rounded-full hover:scrollbar-thumb-current/60 transition-all duration-300 scrollbar-gutter-stable">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {projects.map((project, index) => (
             <motion.div
               key={project.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="glass-card rounded-lg overflow-hidden hover:bg-white/10 transition-all duration-300"
-              whileHover={{ y: -5 }}
+              className="glass-card rounded-lg overflow-hidden hover:bg-current/15 hover:scale-[1.02] hover:-translate-y-1 hover:shadow-xl transition-all duration-200 ease-out cursor-pointer group"
             >
               <div className="relative h-48 bg-gray-200">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary-100 to-primary-200 flex items-center justify-center">
@@ -83,10 +83,10 @@ export function Projects() {
               </div>
 
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-white mb-2 drop-shadow-lg">
+                <h3 className="text-xl font-semibold text-current mb-2 drop-shadow-lg">
                   {project.title}
                 </h3>
-                <p className="text-white/75 mb-4 font-light leading-relaxed">
+                <p className="text-current/75 mb-4 font-light leading-relaxed">
                   {project.description}
                 </p>
 
@@ -94,7 +94,7 @@ export function Projects() {
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 bg-white/20 text-white text-sm rounded-full backdrop-blur-sm"
+                      className="px-3 py-1 bg-current/20 text-current text-sm rounded-full backdrop-blur-sm"
                     >
                       {tech}
                     </span>
@@ -106,7 +106,7 @@ export function Projects() {
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-2 text-white/85 hover:text-white/95 transition-colors duration-200 font-light"
+                    className="flex items-center space-x-2 text-current/85 hover:text-current transition-colors duration-200 font-light"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
@@ -117,7 +117,7 @@ export function Projects() {
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-2 text-white/85 hover:text-white/95 transition-colors duration-200 font-light"
+                    className="flex items-center space-x-2 text-current/85 hover:text-current transition-colors duration-200 font-light"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
@@ -127,7 +127,8 @@ export function Projects() {
                 </div>
               </div>
             </motion.div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

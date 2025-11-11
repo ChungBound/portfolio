@@ -88,200 +88,54 @@ export function Skills() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-white mb-4 drop-shadow-xl">
+          <h2 className="text-4xl font-bold text-current mb-4 drop-shadow-xl">
             Skills & Technologies
           </h2>
-          <p className="text-xl text-white font-light">
+          <p className="text-xl text-current font-light">
             Here are the technologies I work with to bring ideas to life
           </p>
         </motion.div>
 
-        {/* Enhanced Skills Layout with Icons */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
-          {/* Left Column */}
-          <div className="space-y-12">
-            {/* Programming Languages */}
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="text-center lg:text-left"
-            >
-              <h3 className="text-3xl font-bold text-white mb-8 drop-shadow-lg">
-                Programming Languages
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 gap-4">
-                {skillCategories[0].skills.map((skill, index) => {
-                  const IconComponent = skill.icon;
-                  return (
-                    <motion.div
-                      key={skill.name}
-                      initial={{ opacity: 0, scale: 0.8 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.4, delay: index * 0.1 }}
-                      whileHover={{
-                        scale: 1.1,
-                        transition: {
-                          type: "spring",
-                          stiffness: 400,
-                          damping: 10,
-                        },
-                      }}
-                      whileTap={{ scale: 0.95 }}
-                      className="glass-card p-4 rounded-xl text-center hover:bg-white/25 transition-all duration-200 cursor-pointer group"
-                    >
-                      <IconComponent
-                        size={32}
-                        className="text-current opacity-80 group-hover:opacity-100 mx-auto mb-2 transition-all duration-300"
-                      />
-                      <span className="text-current font-medium text-sm block">
-                        {skill.name}
-                      </span>
-                    </motion.div>
-                  );
-                })}
-              </div>
-            </motion.div>
-
-            {/* Tools & Technologies */}
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-center lg:text-left"
-            >
-              <h3 className="text-3xl font-bold text-white mb-8 drop-shadow-lg">
-                Tools & Technologies
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 gap-4">
-                {skillCategories[2].skills.map((skill, index) => {
-                  const IconComponent = skill.icon;
-                  return (
-                    <motion.div
-                      key={skill.name}
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.4, delay: index * 0.05 }}
-                      whileHover={{
-                        scale: 1.1,
-                        transition: {
-                          type: "spring",
-                          stiffness: 400,
-                          damping: 10,
-                        },
-                      }}
-                      whileTap={{ scale: 0.95 }}
-                      className="glass-card p-4 rounded-xl text-center hover:bg-black/10 dark:hover:bg-white/25 transition-all duration-300 cursor-pointer group"
-                    >
-                      <IconComponent
-                        size={32}
-                        className="text-current opacity-80 group-hover:opacity-100 mx-auto mb-2 transition-all duration-300"
-                      />
-                      <span className="text-current font-medium text-sm block">
-                        {skill.name}
-                      </span>
-                    </motion.div>
-                  );
-                })}
-              </div>
-            </motion.div>
-          </div>
-
-          {/* Right Column */}
-          <div className="space-y-12">
-            {/* Frameworks & Libraries */}
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-center lg:text-right"
-            >
-              <h3 className="text-3xl font-bold text-white mb-8 drop-shadow-lg">
-                Frameworks & Libraries
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 gap-4">
-                {skillCategories[1].skills.map((skill, index) => {
-                  const IconComponent = skill.icon;
-                  return (
-                    <motion.div
-                      key={skill.name}
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.4, delay: index * 0.05 }}
-                      whileHover={{
-                        scale: 1.1,
-                        transition: {
-                          type: "spring",
-                          stiffness: 400,
-                          damping: 10,
-                        },
-                      }}
-                      whileTap={{ scale: 0.95 }}
-                      className="glass-card p-4 rounded-xl text-center hover:bg-black/10 dark:hover:bg-white/25 transition-all duration-300 cursor-pointer group"
-                    >
-                      <IconComponent
-                        size={32}
-                        className="text-current opacity-80 group-hover:opacity-100 mx-auto mb-2 transition-all duration-300"
-                      />
-                      <span className="text-current font-medium text-sm block">
-                        {skill.name}
-                      </span>
-                    </motion.div>
-                  );
-                })}
-              </div>
-            </motion.div>
-
-            {/* APIs & Integrations */}
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-center lg:text-right"
-            >
-              <h3 className="text-3xl font-bold text-white mb-8 drop-shadow-lg">
-                APIs & Integrations
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 gap-4">
-                {skillCategories[3].skills.map((skill, index) => {
-                  const IconComponent = skill.icon;
-                  return (
-                    <motion.div
-                      key={skill.name}
-                      initial={{ opacity: 0, x: 30 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.4, delay: index * 0.1 }}
-                      whileHover={{
-                        scale: 1.1,
-                        transition: {
-                          type: "spring",
-                          stiffness: 400,
-                          damping: 10,
-                        },
-                      }}
-                      whileTap={{ scale: 0.95 }}
-                      className="glass-card p-4 rounded-xl text-center hover:bg-black/10 dark:hover:bg-white/25 transition-all duration-300 cursor-pointer group"
-                    >
-                      <IconComponent
-                        size={32}
-                        className="text-current opacity-80 group-hover:opacity-100 mx-auto mb-2 transition-all duration-300"
-                      />
-                      <span className="text-current font-medium text-sm block">
-                        {skill.name}
-                      </span>
-                    </motion.div>
-                  );
-                })}
-              </div>
-            </motion.div>
+        {/* Optimized Skills Grid Layout */}
+        <div className="max-h-[70vh] overflow-y-auto glass-card border border-current/10 rounded-2xl p-6 shadow-2xl bg-white/5 backdrop-blur-lg scrollbar-thin scrollbar-thumb-current/40 scrollbar-track-transparent scrollbar-thumb-rounded-full scrollbar-track-rounded-full hover:scrollbar-thumb-current/60 transition-all duration-300 scrollbar-gutter-stable">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {skillCategories.map((category, categoryIndex) => (
+              <motion.div
+                key={category.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: categoryIndex * 0.1 }}
+                className="text-center"
+              >
+                <h3 className="text-2xl font-bold text-current mb-6 drop-shadow-lg">
+                  {category.title}
+                </h3>
+                <div className="grid grid-cols-1 gap-3">
+                  {category.skills.map((skill, skillIndex) => {
+                    const IconComponent = skill.icon;
+                    return (
+                      <motion.div
+                        key={skill.name}
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.4, delay: categoryIndex * 0.1 + skillIndex * 0.05 }}
+                        className="glass-card p-4 rounded-xl text-center hover:bg-current/15 hover:scale-[1.02] hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200 ease-out cursor-pointer group"
+                      >
+                        <IconComponent
+                          size={28}
+                          className="text-current opacity-70 group-hover:opacity-100 mx-auto mb-2 transition-all duration-300"
+                        />
+                        <span className="text-current font-medium text-sm block leading-tight">
+                          {skill.name}
+                        </span>
+                      </motion.div>
+                    );
+                  })}
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </div>
