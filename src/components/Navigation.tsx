@@ -49,9 +49,7 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16">
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className={`text-2xl font-bold transition-colors duration-300 ${
-              scrolled ? "text-white" : "text-primary-600"
-            }`}
+            className="text-2xl font-bold text-current transition-colors duration-300"
           >
             Ben
           </motion.div>
@@ -62,11 +60,7 @@ export function Navigation() {
               <motion.button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className={`transition-colors duration-200 font-medium ${
-                  scrolled
-                    ? "text-white/80 hover:text-white"
-                    : "text-white/90 hover:text-white"
-                }`}
+                className="transition-colors duration-200 font-medium text-current/80 hover:text-current"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -77,11 +71,7 @@ export function Navigation() {
             {mounted && (
               <motion.button
                 onClick={toggleTheme}
-                className={`p-2 rounded-lg transition-colors duration-200 ${
-                  scrolled
-                    ? "text-white/80 hover:text-white hover:bg-white/10"
-                    : "text-white/90 hover:text-white hover:bg-white/10"
-                }`}
+                className="p-2 rounded-lg transition-colors duration-200 text-current/80 hover:text-current hover:bg-current/10"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 aria-label="Toggle theme"
@@ -95,11 +85,7 @@ export function Navigation() {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`transition-colors duration-200 ${
-                scrolled
-                  ? "text-white/80 hover:text-white"
-                  : "text-gray-700 hover:text-primary-600"
-              }`}
+              className="transition-colors duration-200 text-current/80 hover:text-current"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -118,7 +104,7 @@ export function Navigation() {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="block w-full text-left px-3 py-2 text-white/90 hover:text-white hover:bg-white/10 rounded-md transition-colors duration-200"
+                  className="block w-full text-left px-3 py-2 text-current/90 hover:text-current hover:bg-current/10 rounded-md transition-colors duration-200"
                 >
                   {item.name}
                 </button>
@@ -126,7 +112,7 @@ export function Navigation() {
               {mounted && (
                 <button
                   onClick={toggleTheme}
-                  className="flex items-center w-full text-left px-3 py-2 text-white/90 hover:text-white hover:bg-white/10 rounded-md transition-colors duration-200"
+                  className="flex items-center w-full text-left px-3 py-2 text-current/90 hover:text-current hover:bg-current/10 rounded-md transition-colors duration-200"
                 >
                   {theme === "dark" ? (
                     <Sun size={16} className="mr-2" />
