@@ -32,6 +32,35 @@ A modern, responsive portfolio website built with Next.js, TypeScript, and Tailw
    ```
 4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
+### Mobile Testing (Local Network Access)
+
+To test your portfolio on mobile devices connected to the same Wi-Fi network:
+
+```bash
+npm run dev:lan
+```
+
+This will:
+- Start the development server accessible from your local network
+- Display your local IP addresses and access URLs
+- Allow mobile devices to connect and test the portfolio
+
+Example output:
+```
+🚀 Portfolio Development Server is running!
+📱 You can now access your portfolio from mobile devices:
+
+   🌐 http://192.168.1.100:3000
+   🌐 http://10.0.0.5:3000
+
+💻 Local access: http://localhost:3000
+
+📋 Instructions:
+   1. Make sure your mobile device is connected to the same Wi-Fi network
+   2. Open your mobile browser and visit the URLs shown above
+   3. If you have firewall restrictions, you may need to allow incoming connections
+```
+
 ## Project Structure
 
 ```
