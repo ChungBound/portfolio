@@ -41,10 +41,8 @@ export function About() {
             About Me
           </h2>
           <p className="text-xl text-current max-w-3xl mx-auto leading-relaxed font-light">
-            I'm a full-stack developer with 3+ years of experience in front-end
-            and backend development, currently completing a Master of Computing
-            and Innovation at the University of Adelaide. I love building
-            scalable applications and contributing to innovative projects.
+            我是一名经验丰富的软件开发工程师，目前正在阿德莱德大学攻读计算与创新硕士学位。
+            我热爱构建可扩展的应用程序，并为创新项目做出贡献。
           </p>
         </motion.div>
 

@@ -146,8 +146,7 @@ export function Hero() {
             </span>
           </h1>
           <p className="text-xl sm:text-2xl text-current mb-8 max-w-2xl mx-auto drop-shadow-lg font-light leading-relaxed">
-            Full-stack developer with 3+ years of experience in front-end and
-            backend development
+            经验丰富的软件开发工程师
           </p>
         </motion.div>
 
