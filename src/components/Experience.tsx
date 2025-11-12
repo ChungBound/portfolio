@@ -47,6 +47,29 @@ const experiences = [
       "Engineered core system functionalities including user authentication and role-based access control",
     ],
   },
+  {
+    title: "Front-end Developer",
+    company: "CCB Fintech Co., Ltd.",
+    period: "Jun 2021 – Dec 2021",
+    description: [
+      "Developed and enhanced the Bank Financial Management System, providing form and process management functionalities",
+      "Engineered mobile modules using Vue.js and Vant UI components",
+      "Developed and migrated key functionalities for internal security information system",
+      "Created efficient data visualisation and query systems to optimise accessibility and user experience",
+    ],
+  },
+  {
+    title: "Full-stack Engineer",
+    company: "POWERCHINA Huadong Engineering Corporation Ltd.",
+    period: "Sep 2019 – Mar 2021",
+    description: [
+      "Led full-stack development of enterprise systems using Vue.js, Spring Boot, and Cordova",
+      "Developed an airport construction management system with workflow automation, data visualisation (ECharts), and 3D model rendering",
+      "Built OA systems to streamline user management and approval workflows",
+      "Spearheaded an internal workflow App, coordinating product research and cross-functional implementation",
+      "Delivered an employee report system integrating work analytics and travel statistics",
+    ],
+  },
 ];
 
 export function Experience() {
