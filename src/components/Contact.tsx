@@ -188,7 +188,7 @@ export function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-white/5 dark:bg-gray-800/50 border border-gray-300 dark:border-gray-600 rounded-lg text-gray-900 dark:text-white placeholder-gray-600 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-blue-500 dark:focus:border-blue-400 transition-colors duration-200 [&:-webkit-autofill]:bg-white/5 dark:[&:-webkit-autofill]:bg-gray-800/50 [&:-webkit-autofill]:text-gray-900 dark:[&:-webkit-autofill]:text-white"
+                  className="form-input"
                   placeholder="Your name"
                 />
               </motion.div>
@@ -212,7 +212,7 @@ export function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-white/5 dark:bg-gray-800/50 border border-gray-300 dark:border-gray-600 rounded-lg text-gray-900 dark:text-white placeholder-gray-600 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-blue-500 dark:focus:border-blue-400 transition-colors duration-200 [&:-webkit-autofill]:bg-white/5 dark:[&:-webkit-autofill]:bg-gray-800/50 [&:-webkit-autofill]:text-gray-900 dark:[&:-webkit-autofill]:text-white"
+                  className="form-input"
                   placeholder="your.email@example.com"
                 />
               </motion.div>
@@ -236,7 +236,7 @@ export function Contact() {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 bg-white/5 dark:bg-gray-800/50 border border-gray-300 dark:border-gray-600 rounded-lg text-gray-900 dark:text-white placeholder-gray-600 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-blue-500 dark:focus:border-blue-400 transition-colors duration-200 resize-none"
+                  className="form-input resize-none"
                   placeholder="Tell me about your project..."
                 />
               </motion.div>
