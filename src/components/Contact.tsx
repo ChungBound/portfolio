@@ -236,7 +236,7 @@ export function Contact() {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 bg-white/10 dark:bg-black/20 border border-current/20 rounded-lg text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-current/50 focus:border-current/30 transition-colors duration-200 resize-none"
+                  className="w-full px-4 py-3 bg-white/5 dark:bg-gray-800/50 border border-gray-300 dark:border-gray-600 rounded-lg text-gray-900 dark:text-gray-100 placeholder-gray-600 dark:placeholder-gray-300 focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-blue-500 dark:focus:border-blue-400 transition-colors duration-200 resize-none"
                   placeholder="Tell me about your project..."
                 />
               </motion.div>
