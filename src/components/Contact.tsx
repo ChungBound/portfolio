@@ -188,7 +188,7 @@ export function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-current/10 border border-current/20 rounded-lg text-current placeholder-current/50 focus:ring-2 focus:ring-current/50 focus:border-current/30 transition-colors duration-200"
+                  className="w-full px-4 py-3 bg-white/10 dark:bg-black/20 border border-current/20 rounded-lg text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-current/50 focus:border-current/30 transition-colors duration-200"
                   placeholder="Your name"
                 />
               </motion.div>
@@ -212,7 +212,7 @@ export function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-current/10 border border-current/20 rounded-lg text-current placeholder-current/50 focus:ring-2 focus:ring-current/50 focus:border-current/30 transition-colors duration-200"
+                  className="w-full px-4 py-3 bg-white/10 dark:bg-black/20 border border-current/20 rounded-lg text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-current/50 focus:border-current/30 transition-colors duration-200"
                   placeholder="your.email@example.com"
                 />
               </motion.div>
@@ -236,7 +236,7 @@ export function Contact() {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 bg-current/10 border border-current/20 rounded-lg text-current placeholder-current/50 focus:ring-2 focus:ring-current/50 focus:border-current/30 transition-colors duration-200 resize-none"
+                  className="w-full px-4 py-3 bg-white/10 dark:bg-black/20 border border-current/20 rounded-lg text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-current/50 focus:border-current/30 transition-colors duration-200 resize-none"
                   placeholder="Tell me about your project..."
                 />
               </motion.div>
