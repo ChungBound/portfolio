@@ -80,9 +80,11 @@
     -webkit-backdrop-filter: blur(16px);
     border: 1px solid var(--glass-border);
     border-radius: 0.75rem;
+    /* Ensure visibility during animations on mobile */
+    will-change: opacity, transform;
   }
 
-  /* Fallback for browsers that don't support backdrop-filter */
+  /* Enhanced mobile compatibility - more aggressive fallback */
   @supports not (backdrop-filter: blur(16px)) {
     .glass-card {
       background: var(--card-bg);
@@ -92,6 +94,53 @@
     .dark .glass-card {
       background: rgba(31, 41, 55, 0.8);
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  /* Additional fallback for mobile browsers that may not support @supports */
+  .glass-card {
+    background: var(--card-bg);
+  }
+
+  .dark .glass-card {
+    background: rgba(31, 41, 55, 0.8);
+  }
+
+  /* Modern browsers with backdrop-filter support */
+  @supports (backdrop-filter: blur(16px)) {
+    .glass-card {
+      background: var(--glass-bg);
+    }
+  }
+
+  /* Mobile-specific optimizations */
+  @media (max-width: 768px) {
+    .glass-card {
+      /* Ensure cards are always visible on mobile */
+      background: var(--card-bg) !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+    }
+
+    .dark .glass-card {
+      background: rgba(31, 41, 55, 0.9) !important;
+    }
+
+    /* Reduce motion for better mobile performance */
+    @media (prefers-reduced-motion: no-preference) {
+      .glass-card {
+        transition: all 0.15s ease-out;
+      }
+    }
+
+    /* Ensure mobile cards are always visible */
+    .mobile-card {
+      background: var(--card-bg) !important;
+      border: 1px solid var(--glass-border) !important;
+    }
+
+    .dark .mobile-card {
+      background: rgba(31, 41, 55, 0.9) !important;
     }
   }
 

@@ -121,7 +121,7 @@ export function Skills() {
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.4, delay: categoryIndex * 0.1 + skillIndex * 0.05 }}
-                        className="glass-card p-4 rounded-xl text-center hover:bg-current/15 hover:scale-[1.02] hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200 ease-out cursor-pointer group"
+                        className="glass-card p-4 rounded-xl text-center hover:bg-current/15 hover:scale-[1.02] hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200 ease-out cursor-pointer group mobile-card"
                       >
                         <IconComponent
                           size={28}

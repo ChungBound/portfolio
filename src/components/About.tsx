@@ -99,7 +99,7 @@ export function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="glass-card p-6 rounded-lg text-center hover:bg-current/15 hover:scale-[1.02] hover:-translate-y-1 hover:shadow-xl transition-all duration-200 ease-out cursor-pointer group"
+                className="glass-card p-6 rounded-lg text-center hover:bg-current/15 hover:scale-[1.02] hover:-translate-y-1 hover:shadow-xl transition-all duration-200 ease-out cursor-pointer group mobile-card"
               >
                 <skill.icon className="w-12 h-12 text-current opacity-80 group-hover:opacity-100 mx-auto mb-4 transition-all duration-300" />
                 <h4 className="font-semibold text-current mb-2 drop-shadow-md">
