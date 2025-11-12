@@ -12,7 +12,9 @@ export function Contact() {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+  const [submitStatus, setSubmitStatus] = useState<
+    "idle" | "success" | "error"
+  >("idle");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -28,11 +30,12 @@ export function Contact() {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: "YOUR_WEB3FORMS_ACCESS_KEY", // Replace with your Web3Forms access key from https://web3forms.com/
+          access_key: "577a2e0b-21f0-4f1c-9184-a24b2157af17", // Replace with your Web3Forms access key from https://web3forms.com/
           name: formData.name,
           email: formData.email,
           message: formData.message,
           subject: `Portfolio Contact - ${formData.name}`,
+          to: "chungzbound@gmail.com",
           // You can also add your email here: to: "your-email@example.com"
         }),
       });
@@ -253,7 +256,11 @@ export function Contact() {
                   <>
                     <motion.div
                       animate={{ rotate: 360 }}
-                      transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
+                      transition={{
+                        duration: 1,
+                        repeat: Infinity,
+                        ease: "linear",
+                      }}
                       className="w-5 h-5 border-2 border-current/30 border-t-current rounded-full"
                     />
                     <span>Sending...</span>
