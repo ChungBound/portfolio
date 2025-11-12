@@ -89,8 +89,14 @@ export function Experience() {
                   index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
                 }`}
               >
-                {/* Timeline dot - positioned on the timeline line */}
-                <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full border-4 border-current/20 shadow-lg z-10 bg-gradient-to-r from-blue-400 to-purple-400" />
+                {/* Timeline dot - positioned dynamically based on content side */}
+                <div
+                  className={`absolute top-1/2 -translate-y-1/2 w-4 h-4 rounded-full border-4 border-current/20 shadow-lg z-10 ${
+                    index % 2 === 0
+                      ? "left-1/2 -translate-x-6 bg-gradient-to-r from-blue-400 to-purple-400"
+                      : "left-1/2 translate-x-2 bg-gradient-to-r from-green-400 to-blue-400"
+                  }`}
+                />
                 {/* Content */}
                 <div
                   className={`w-full md:w-5/12 ml-8 md:ml-0 ${
