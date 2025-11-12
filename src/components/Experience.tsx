@@ -93,8 +93,8 @@ export function Experience() {
                 <div
                   className={`absolute top-1/2 -translate-y-1/2 w-4 h-4 rounded-full border-4 border-current/20 shadow-lg z-10 ${
                     index % 2 === 0
-                      ? "left-1/2 -translate-x-6 bg-gradient-to-r from-blue-400 to-purple-400"
-                      : "left-1/2 translate-x-2 bg-gradient-to-r from-green-400 to-blue-400"
+                      ? "left-1/2 -translate-x-3 bg-gradient-to-r from-blue-400 to-purple-400"
+                      : "left-1/2 translate-x-1 bg-gradient-to-r from-green-400 to-blue-400"
                   }`}
                 />
                 {/* Content */}
