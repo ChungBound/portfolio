@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
+    id: "research-assistant-adelaide",
     title: "Research Assistant",
     company: "The University of Adelaide",
     period: "Aug 2025 – Present",
@@ -15,6 +16,7 @@ const experiences = [
     ],
   },
   {
+    id: "developer-assistant-adelaide",
     title: "Developer / Research Project Assistant",
     company: "The University of Adelaide",
     period: "May 2024 – Nov 2024",
@@ -26,6 +28,7 @@ const experiences = [
     ],
   },
   {
+    id: "frontend-mentor-itcast",
     title: "Front-end Development Mentor",
     company: "Itcast Education Group",
     period: "Aug 2022 – Oct 2022",
@@ -37,6 +40,7 @@ const experiences = [
     ],
   },
   {
+    id: "frontend-developer-insigma",
     title: "Front-end Developer",
     company: "Insigma Hengtian Software Ltd.",
     period: "Mar 2022 – Aug 2022",
@@ -48,6 +52,7 @@ const experiences = [
     ],
   },
   {
+    id: "frontend-developer-ccb",
     title: "Front-end Developer",
     company: "CCB Fintech Co., Ltd.",
     period: "Jun 2021 – Dec 2021",
@@ -59,6 +64,7 @@ const experiences = [
     ],
   },
   {
+    id: "fullstack-engineer-powerchina",
     title: "Full-stack Engineer",
     company: "POWERCHINA Huadong Engineering Corporation Ltd.",
     period: "Sep 2019 – Mar 2021",
@@ -103,7 +109,7 @@ export function Experience() {
           <div className="space-y-16 max-h-[75vh] overflow-y-auto glass-card border border-current/10 rounded-2xl p-6 shadow-2xl bg-white/5 backdrop-blur-lg scrollbar-thin scrollbar-thumb-current/40 scrollbar-track-transparent scrollbar-thumb-rounded-full scrollbar-track-rounded-full hover:scrollbar-thumb-current/60 transition-all duration-300 scrollbar-gutter-stable">
             {experiences.map((exp, index) => (
               <motion.div
-                key={exp.title}
+                key={exp.id}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -119,6 +125,7 @@ export function Experience() {
                       ? "left-1/2 -translate-x-3 bg-gradient-to-r from-blue-400 to-purple-400"
                       : "left-1/2 translate-x-1 bg-gradient-to-r from-green-400 to-blue-400"
                   }`}
+                  suppressHydrationWarning
                 />
                 {/* Content */}
                 <div
