@@ -129,6 +129,7 @@ export function Hero() {
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
             }}
+            suppressHydrationWarning
           />
         ))}
       </div>
