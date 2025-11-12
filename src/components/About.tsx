@@ -41,8 +41,9 @@ export function About() {
             About Me
           </h2>
           <p className="text-xl text-current max-w-3xl mx-auto leading-relaxed font-light">
-            我是一名经验丰富的软件开发工程师，目前正在阿德莱德大学攻读计算与创新硕士学位。
-            我热爱构建可扩展的应用程序，并为创新项目做出贡献。
+            I'm an experienced software developer currently working as a Research Assistant
+            at the University of Adelaide. I love building scalable applications and
+            contributing to innovative projects.
           </p>
         </motion.div>
 
