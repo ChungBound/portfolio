@@ -68,9 +68,9 @@ export function About() {
               <p>
                 Throughout my career, I've worked across various industries
                 including education, finance, and enterprise software
-                development. I've contributed to workflow automation systems in
-                the finance sector, AI-powered music generation platforms, and
-                large-scale enterprise applications.
+                development. I've contributed to workflow automation systems,
+                AI-powered music generation platforms, and large-scale
+                enterprise applications.
               </p>
               <p>
                 Currently working as a Research Assistant at the University of

@@ -1,0 +1,167 @@
+\documentclass[12pt]{article}
+\usepackage[margin=0.80in]{geometry}
+
+\usepackage{enumitem}
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+\usepackage{times}
+\usepackage{setspace}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{hyperref}
+
+
+
+\setstretch{1.0}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+% \titlespacing*{\section}{0pt}{2ex plus 0.5ex minus .2ex}{1.5ex}
+\titlespacing*{\section}{0pt}{1.2ex plus 0.2ex minus .1ex}{0.6ex}
+
+
+\titleformat{\subsection}{\normalsize\normalfont}{}{0em}{}
+\titlespacing*{\subsection}{0pt}{0.6ex plus 0.2ex minus .1ex}{0.4ex}
+
+\setlist[itemize]{leftmargin=1.1em, itemsep=1pt, topsep=1pt, parsep=0pt, partopsep=0pt}
+
+
+\newcommand{\sls}{\slash}           
+\newcommand{\kw}[1]{\textbf{#1}}    
+\newcommand{\blocksep}{\vspace{1ex}}
+
+\newcommand{\entry}[4]{%
+  \subsection*{%
+    \begin{tabular*}{\textwidth}
+      {@{\extracolsep{\fill}} @{}l @{} >{\raggedleft\arraybackslash}p{0.35\textwidth} @{}}
+      \textbf{#1} & {\itshape\bfseries #3} \\
+      {\mdseries #2} & {\mdseries #4} \\
+    \end{tabular*}
+  }%
+  \vspace{-1.2em}%
+}
+
+\newcommand{\entrynl}[4]{%
+  \subsection*{%
+    \begin{tabular*}{\textwidth}
+      {@{\extracolsep{\fill}} @{}l @{} >{\raggedleft\arraybackslash}p{0.45\textwidth} @{}}
+      \textbf{#1} & {\itshape\bfseries #3} \\
+      {\mdseries #2} & {\mdseries #4} \\
+    \end{tabular*}
+  }%
+  \vspace{0.2em}%
+}
+
+\begin{document}
+
+\begin{center}
+{\huge \bfseries \textcolor{black}{Ben Zhang}}\\[0.2cm]
+\textcolor{black}{0430 010 107 \,|\, \href{mailto:chungzbound@gmail.com}{chungzbound@gmail.com} \,|\, \textcolor{black}{\href{https://linkedin.com/in/zebang-zhang}{linkedin.com/in/zebang-zhang}}}\\
+\textcolor{black}{Full working rights in Australia}} \,|\, \textcolor{black}{Adelaide SA}
+\end{center}
+
+\vspace{0.2cm}
+
+% ---------- Career Objective ----------
+\section*{CAREER OBJECTIVE}
+Experienced full-stack developer with over 4 years in front-end and back-end technologies, currently serving as a Research Assistant at the University of Adelaide. Proficient in web development, software engineering, data processing, and cloud deployment, seeking a challenging Software Engineer role to leverage these skills in building scalable and innovative applications.
+
+% ---------- Key Skills ----------
+\section*{KEY SKILLS}
+\textcolor{black}{
+\textbf{Programming Languages:} JavaScript (ES6+), TypeScript, Python, Java, SQL, C, C++ \\
+\textbf{Frameworks \& Libraries:} Vue.js, React, Next.js, FastAPI, Node.js, Tailwind CSS, Spring Boot \\
+\textbf{Software \& Tools:} Git, Webpack, Vite, Cordova, Nginx, Nacos, ECharts \\
+\textbf{APIs \& Integrations:} RESTful APIs, GPT AI APIs \\
+\textbf{Methodologies:} Agile Development, Responsive Design, System Design, Data Structures \\
+\textbf{Soft Skills:} Team Collaboration, Research Support, Cross-cultural Communication
+}
+
+
+% ---------- Professional Experience ----------
+\section*{WORK EXPERIENCE}
+
+\entry{The University of Adelaide}{Research Assistant}{Aug 2025 – Present}{Adelaide, SA}
+\begin{itemize}
+  \item Contributed to the NeuroFlip Reader project, a brain-computer interface (BCI) system enabling users to flip digital book pages using brainwave signals from the Emotiv EPOC+ headset
+  \item Built Vue 3 frontend for real-time EEG-based interactive page flipping
+  \item Built the backend using Python FastAPI, supporting API development and EEG data processing
+  \item Supported system integration, testing, and cross-disciplinary research in human-centred computing
+\end{itemize}
+\blocksep
+
+\entry{The University of Adelaide}{Developer / Research Project Assistant}{May 2024 – Nov 2024}{Adelaide, SA}
+\begin{itemize}
+ \item Led development of an AI-powered music generation system to assess stress reduction, integrating Vue 3 + Vite frontend with Python + SQLite backend
+ \item Built an environment detection module using camera feeds and GPT AI APIs, enabling real-time tag generation for music prompts
+ \item Optimised AI music playback using Suno AI API, enabling seamless switching between streaming 
+and MP3 formats for real-time listening, enhancing user experience by reducing wait time
+ \item Implemented user activity tracking to support experimental data analysis for research paper
+\end{itemize}
+\blocksep
+
+\entry{Itcast Education Group}{Front-end Development Mentor}{Aug 2022 – Oct 2022}{Chengdu, China}
+\begin{itemize}
+ \item Guided aspiring developers in front-end skills and career preparation
+\item Conducted in-depth training sessions on Vue.js, covering core concepts such as component-based architecture, state management, and API integration
+ \item Organised technical learning materials to enhance student learning outcomes. Provided careeroriented mentoring, helping students build projects, improve coding efficiency, and prepare for 
+technical interviews
+\end{itemize}
+\blocksep
+
+\entry{Insigma Hengtian Software Ltd.}{Front-end Developer}{Mar 2022 – Aug 2022}{Hangzhou, China}
+\begin{itemize}
+ \item Developed and optimised a scalable front-end architecture for a third-party recruitment management system, enhancing efficiency and maintainability
+ \item Led and coordinated a front-end development team, overseeing technical decisions and implementation strategies, designed and standardised a reusable component library
+ \item Architected entire front-end infrastructure using Vue.js, Element UI, and Webpack, establishing coding standards and best practices
+ \item Engineered core system functionalities, including user authentication, dynamic menu navigation, and role-based access control (RBAC)
+\end{itemize}
+\blocksep
+
+\entry{CCB Fintech Co., Ltd.}{Front-end Developer}{Jun 2021 – Dec 2021}{Shanxi, China}
+\begin{itemize}
+\item Developed and enhanced the Bank Financial Management System, providing form and process management functionalities to optimise accessibility and user experience for financial services
+\item Engineered mobile modules using Vue.js and Vant UI components
+\item Developed and migrated key functionalities for internal security information system
+\item Created efficient data visualisation and query systems
+\end{itemize}
+\blocksep
+
+\entry{POWERCHINA Huadong Engineering Corporation Ltd.}{Full-stack Engineer}{Sep 2019 – Mar 2021}{China}
+\begin{itemize}
+\item Led full-stack development of enterprise systems using Vue.js, Spring Boot, and Cordova
+\item Developed an airport construction management system with workflow automation, data visualisation (ECharts), and 3D model rendering
+\item Built OA systems to streamline user management and approval workflows
+\item Spearheaded an internal workflow App, coordinating product research and cross-functional implementation
+\item Delivered an employee report system integrating work analytics and travel statistics
+
+\end{itemize}
+
+% ---------- Projects ----------
+\section*{Research \& Community Engagement}
+
+\begin{itemize}
+\item Context-AI Tunes: Evaluating the Effectiveness of AI-Generated and Human-Composed Music for Stress Reduction Across Different Physical Environments (HCII Conference / Journal)
+\item YouX Volunteer - O’Week Volunteer (Semester 1, 2024 \& Semester 1, 2025)
+\item Global IQ Connect Program - Completed cross-cultural intelligence training
+\end{itemize}
+
+
+% ---------- Education ----------
+\section*{EDUCATION}
+
+\entry{The University of Adelaide}{Master of Computing and Innovation (GPA: 6.3/7)}{Jul 2023 – Jul 2025}{Adelaide, SA}
+\begin{itemize}
+  \item Awarded the 2025 School of Computer and Mathematical Sciences Software Engineering Prize for “SecuFlow Miner(enterprise repository security analysis system)”
+\end{itemize}
+\blocksep
+
+
+\entry{Taiyuan University of Technology}{Bachelor of Software Engineering}{Sep 2015 – Jul 2019}{Taiyuan, China}
+
+\blocksep
+
+% ---------- Reference ----------
+\section*{REFERENCE}
+Available upon request
+
+\end{document}
