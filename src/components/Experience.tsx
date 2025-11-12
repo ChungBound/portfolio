@@ -76,21 +76,6 @@ export function Experience() {
           {/* Timeline line */}
           <div className="absolute left-1/2 transform -translate-x-0.5 w-0.5 bg-gradient-to-b from-blue-400 via-purple-400 to-pink-400 h-full opacity-60" />
 
-          {/* Timeline dots */}
-          {experiences.map((exp, index) => (
-            <div
-              key={`dot-${index}`}
-              className={`absolute w-4 h-4 rounded-full border-4 border-current/20 shadow-lg z-20 ${
-                index % 2 === 0
-                  ? "left-1/2 -translate-x-6 -translate-y-2 bg-gradient-to-r from-blue-400 to-purple-400"
-                  : "left-1/2 translate-x-2 -translate-y-2 bg-gradient-to-r from-green-400 to-blue-400"
-              }`}
-              style={{
-                top: `${(index * 4 + 2)}rem`, // Position dots along the timeline
-              }}
-            />
-          ))}
-
           {/* Timeline items container with scroll */}
           <div className="space-y-16 max-h-[75vh] overflow-y-auto glass-card border border-current/10 rounded-2xl p-6 shadow-2xl bg-white/5 backdrop-blur-lg scrollbar-thin scrollbar-thumb-current/40 scrollbar-track-transparent scrollbar-thumb-rounded-full scrollbar-track-rounded-full hover:scrollbar-thumb-current/60 transition-all duration-300 scrollbar-gutter-stable">
             {experiences.map((exp, index) => (
@@ -104,7 +89,8 @@ export function Experience() {
                   index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
                 }`}
               >
-
+                {/* Timeline dot - positioned on the timeline line */}
+                <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full border-4 border-current/20 shadow-lg z-10 bg-gradient-to-r from-blue-400 to-purple-400" />
                 {/* Content */}
                 <div
                   className={`w-full md:w-5/12 ml-8 md:ml-0 ${
@@ -113,9 +99,7 @@ export function Experience() {
                       : "md:pl-8 md:ml-8"
                   }`}
                 >
-                  <motion.div
-                    className="glass-card p-6 rounded-xl hover:bg-current/15 hover:scale-[1.02] hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200 ease-out cursor-pointer"
-                  >
+                  <motion.div className="glass-card p-6 rounded-xl hover:bg-current/15 hover:scale-[1.02] hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200 ease-out cursor-pointer">
                     <div
                       className={`mb-4 ${
                         index % 2 === 0 ? "md:text-right" : "md:text-left"
@@ -180,9 +164,7 @@ export function Experience() {
               <div className="absolute left-0 ml-4 w-4 h-4 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full border-4 border-white/20 shadow-lg z-10" />
 
               <div className="w-full md:w-5/12 md:pr-8 md:text-right">
-                <motion.div
-                  className="glass-card p-6 rounded-xl hover:bg-current/15 hover:scale-[1.02] hover:-translate-y-0.5 transition-all duration-200 ease-out cursor-pointer"
-                >
+                <motion.div className="glass-card p-6 rounded-xl hover:bg-current/15 hover:scale-[1.02] hover:-translate-y-0.5 transition-all duration-200 ease-out cursor-pointer">
                   <div className="mb-4 md:text-right">
                     <h3 className="text-xl font-semibold text-current drop-shadow-lg mb-1">
                       Research Achievements
