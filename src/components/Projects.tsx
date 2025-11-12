@@ -15,7 +15,7 @@ const projects = [
     liveUrl: "https://page-flip-vue.vercel.app/#/",
   },
   {
-    title: "React Learning Bunny",
+    title: "React Learning Tutorial",
     description:
       "An interactive React learning guide website featuring internationalization, dark/light theme switching, and comprehensive React tutorials from basics to advanced patterns. Showcases React development growth path with menu management and practical examples.",
     image: "/api/placeholder/600/400",
