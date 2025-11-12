@@ -15,31 +15,13 @@ const projects = [
     liveUrl: "https://page-flip-vue.vercel.app/#/",
   },
   {
-    title: "Context-AI Tunes",
+    title: "React Learning Bunny",
     description:
-      "AI-powered music generation system to assess stress reduction across different physical environments. Features environment detection using camera feeds and GPT AI APIs.",
+      "An interactive React learning guide website featuring internationalization, dark/light theme switching, and comprehensive React tutorials from basics to advanced patterns. Showcases React development growth path with menu management and practical examples.",
     image: "/api/placeholder/600/400",
-    technologies: ["Vue.js", "Python", "SQLite", "GPT AI APIs"],
-    githubUrl: "#",
-    liveUrl: "#",
-  },
-  {
-    title: "Airport Construction Management System",
-    description:
-      "Enterprise system for airport construction management with workflow automation, data visualization using ECharts, and 3D model rendering capabilities.",
-    image: "/api/placeholder/600/400",
-    technologies: ["Vue.js", "Spring Boot", "ECharts", "3D Rendering"],
-    githubUrl: "#",
-    liveUrl: "#",
-  },
-  {
-    title: "Shanxi Government Affairs App",
-    description:
-      "Mobile application for provincial government services, featuring social security information systems and efficient data visualization and query systems.",
-    image: "/api/placeholder/600/400",
-    technologies: ["Vue.js", "Cordova", "Vant UI", "Mobile Development"],
-    githubUrl: "#",
-    liveUrl: "#",
+    technologies: ["React", "Next.js", "Tailwind CSS", "i18n", "TypeScript"],
+    githubUrl: "https://github.com/ChungBound/react-learning-bunny",
+    liveUrl: "https://react-learning-bunny.vercel.app/en",
   },
 ];
 
