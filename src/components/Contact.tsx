@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { useState } from "react";
 
 export function Contact() {
@@ -11,12 +11,44 @@ export function Contact() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
-    // Reset form
-    setFormData({ name: "", email: "", message: "" });
+    setIsSubmitting(true);
+    setSubmitStatus("idle");
+
+    try {
+      // Using Web3Forms for free form submission
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "YOUR_WEB3FORMS_ACCESS_KEY", // Replace with your Web3Forms access key from https://web3forms.com/
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          subject: `Portfolio Contact - ${formData.name}`,
+          // You can also add your email here: to: "your-email@example.com"
+        }),
+      });
+
+      if (response.ok) {
+        setSubmitStatus("success");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        setSubmitStatus("error");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setSubmitStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -201,7 +233,7 @@ export function Contact() {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors duration-200 resize-none"
+                  className="w-full px-4 py-3 bg-current/10 border border-current/20 rounded-lg text-current placeholder-current/50 focus:ring-2 focus:ring-current/50 focus:border-current/30 transition-colors duration-200 resize-none"
                   placeholder="Tell me about your project..."
                 />
               </motion.div>
@@ -212,11 +244,48 @@ export function Contact() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: 0.4 }}
                 type="submit"
-                className="w-full btn-secondary"
+                disabled={isSubmitting}
+                className="w-full px-6 py-4 bg-current/10 hover:bg-current/20 border border-current/20 hover:border-current/30 rounded-xl text-current font-medium transition-all duration-300 flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed group"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                Send Message
+                {isSubmitting ? (
+                  <>
+                    <motion.div
+                      animate={{ rotate: 360 }}
+                      transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
+                      className="w-5 h-5 border-2 border-current/30 border-t-current rounded-full"
+                    />
+                    <span>Sending...</span>
+                  </>
+                ) : submitStatus === "success" ? (
+                  <>
+                    <motion.div
+                      initial={{ scale: 0 }}
+                      animate={{ scale: 1 }}
+                      className="w-5 h-5 text-green-500"
+                    >
+                      ✓
+                    </motion.div>
+                    <span>Message Sent!</span>
+                  </>
+                ) : submitStatus === "error" ? (
+                  <>
+                    <motion.div
+                      initial={{ scale: 0 }}
+                      animate={{ scale: 1 }}
+                      className="w-5 h-5 text-red-500"
+                    >
+                      ✕
+                    </motion.div>
+                    <span>Failed to send</span>
+                  </>
+                ) : (
+                  <>
+                    <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                    <span>Send Message</span>
+                  </>
+                )}
               </motion.button>
             </form>
           </motion.div>
