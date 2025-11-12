@@ -41,9 +41,9 @@ export function About() {
             About Me
           </h2>
           <p className="text-xl text-current max-w-3xl mx-auto leading-relaxed font-light">
-            I'm an experienced software developer currently working as a Research Assistant
-            at the University of Adelaide. I love building scalable applications and
-            contributing to innovative projects.
+            I'm an experienced software developer currently working as a
+            Research Assistant at the University of Adelaide. I love building
+            scalable applications and contributing to innovative projects.
           </p>
         </motion.div>
 
@@ -59,24 +59,28 @@ export function About() {
             </h3>
             <div className="space-y-4 text-current leading-relaxed">
               <p>
-                My journey into software development began during my undergraduate
-                studies at Taiyuan University of Technology, where I earned my
-                Bachelor of Software Engineering degree with a GPA of 6.3/7.
+                My journey into software development began during my
+                undergraduate studies at Taiyuan University of Technology, where
+                I earned my Bachelor of Software Engineering degree. I further
+                advanced my expertise by completing a Master of Computing and
+                Innovation at the University of Adelaide with a GPA of 6.3/7.
               </p>
               <p>
-                Throughout my career, I've worked across various industries including
-                education, finance, and enterprise software development. I've contributed
-                to workflow automation systems in the finance sector, AI-powered music
-                generation platforms, and large-scale enterprise applications.
+                Throughout my career, I've worked across various industries
+                including education, finance, and enterprise software
+                development. I've contributed to workflow automation systems in
+                the finance sector, AI-powered music generation platforms, and
+                large-scale enterprise applications.
               </p>
               <p>
-                Currently working as a Research Assistant at the University of Adelaide,
-                I've completed multiple research projects and published a paper on
-                AI Music generation in the HCII journal. My SecuFlow Miner project,
-                an enterprise-level code security analysis system, won the School of
-                Computer and Mathematical Sciences Software Engineering Prize ($1000).
-                I'm passionate about leveraging technology to solve real-world problems
-                and create meaningful user experiences.
+                Currently working as a Research Assistant at the University of
+                Adelaide, I've completed multiple research projects and
+                published a paper on AI Music generation in the HCII journal. My
+                SecuFlow Miner project, an enterprise-level code security
+                analysis system, won the School of Computer and Mathematical
+                Sciences Software Engineering Prize ($1000). I'm passionate
+                about leveraging technology to solve real-world problems and
+                create meaningful user experiences.
               </p>
             </div>
           </motion.div>
