@@ -152,13 +152,15 @@
     color: #111827 !important;
     -webkit-text-fill-color: #111827 !important;
     -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0.05) inset !important;
+    transition: background-color 0.2s ease !important;
   }
 
   .dark input:-webkit-autofill,
   .dark textarea:-webkit-autofill {
     background-color: rgba(31, 41, 55, 0.5) !important;
-    color: #f3f4f6 !important;
-    -webkit-text-fill-color: #f3f4f6 !important;
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
     -webkit-box-shadow: 0 0 0px 1000px rgba(31, 41, 55, 0.5) inset !important;
+    transition: background-color 0.2s ease !important;
   }
 }
