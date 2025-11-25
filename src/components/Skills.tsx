@@ -36,7 +36,7 @@ const skillCategories = [
   {
     title: "Frameworks & Libraries",
     skills: [
-      { name: "Laravel", icon: Server },
+      { name: "Spring Boot", icon: Server },
       { name: "Symfony", icon: Server },
       { name: "Vue.js", icon: Layers },
       { name: "React", icon: Layers },
