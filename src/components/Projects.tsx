@@ -6,11 +6,11 @@ import Image from "next/image";
 
 const projects = [
   {
-    title: "NeuroFlip Reader - BCI System",
+    title: "NeuroFlip Reader · BCI System",
     description:
       "A brain-computer interface system enabling users to flip digital book pages using brainwave signals from the Emotiv EPOC+ headset. Built Vue 3 frontend with Python FastAPI backend.",
     image: "/api/placeholder/600/400",
-    technologies: ["Vue.js", "Python", "FastAPI", "EEG Processing"],
+    technologies: ["Vue 3", "FastAPI", "EEG Processing", "WebSockets"],
     githubUrl: "https://page-flip-vue.vercel.app/#/",
     liveUrl: "https://page-flip-vue.vercel.app/#/",
   },
@@ -86,7 +86,7 @@ export function Projects() {
 
                 <div className="px-6 pb-6">
                   <div className="flex space-x-4">
-                    <motion.a
+                    {/* <motion.a
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -96,8 +96,8 @@ export function Projects() {
                     >
                       <Github size={20} />
                       <span>Code</span>
-                    </motion.a>
-                    {/* <motion.a
+                    </motion.a> */}
+                    <motion.a
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -107,7 +107,7 @@ export function Projects() {
                     >
                       <ExternalLink size={20} />
                       <span>Live Demo</span>
-                    </motion.a> */}
+                    </motion.a>
                   </div>
                 </div>
               </motion.div>

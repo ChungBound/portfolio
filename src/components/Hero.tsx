@@ -147,8 +147,9 @@ export function Hero() {
             </span>
           </h1>
           <p className="text-xl sm:text-2xl text-current mb-8 max-w-2xl mx-auto drop-shadow-lg font-light leading-relaxed">
-            Experienced Software Developer specializing in full-stack
-            development, passionate about creating innovative solutions
+            Full-stack engineer with 3+ years building enterprise PHP (Laravel &
+            Symfony) and JavaScript (Vue/React/Next.js) platforms, blending
+            fintech, AI, and research experience to ship reliable products
           </p>
         </motion.div>
 

@@ -7,22 +7,22 @@ const skills = [
   {
     icon: Code,
     title: "Languages",
-    description: "JavaScript, TypeScript, Python, Java, SQL, C, C++",
+    description: "PHP, JavaScript (ES6+), TypeScript, Python, Java, SQL, C/C++",
   },
   {
     icon: Globe,
     title: "Frameworks & Libraries",
-    description: "Vue.js, React, Next.js, FastAPI, Node.js, Spring Boot",
+    description: "Laravel, Symfony, Vue.js, React, Next.js, FastAPI, Node.js",
   },
   {
     icon: Database,
     title: "Tools & Technologies",
-    description: "Git, Webpack, Vite, Tailwind CSS, ECharts, Cordova",
+    description: "MySQL, PostgreSQL, Redis, Docker, Git, Nginx, Tailwind CSS",
   },
   {
     icon: Smartphone,
     title: "APIs & Integrations",
-    description: "RESTful APIs, GPT AI APIs",
+    description: "RESTful APIs, GPT/Suno AI APIs, RabbitMQ, CI/CD automation",
   },
 ];
 
@@ -66,21 +66,18 @@ export function About() {
                 Innovation at the University of Adelaide with a GPA of 6.3/7.
               </p>
               <p>
-                Throughout my career, I've worked across various industries
-                including education, finance, and enterprise software
-                development. I've contributed to workflow automation systems,
-                AI-powered music generation platforms, and large-scale
-                enterprise applications.
+                Throughout my career, I've led cross-functional delivery for
+                fintech, infrastructure, and research teams—shipping Laravel and
+                Symfony backends with Vue/React frontends, integrating RabbitMQ,
+                Redis, and secure API gateways for enterprise workflows.
               </p>
               <p>
-                Currently working as a Research Assistant at the University of
-                Adelaide, I've completed multiple research projects and
-                published a paper on AI Music generation in the HCII journal. My
-                SecuFlow Miner project, an enterprise-level code security
-                analysis system, won the School of Computer and Mathematical
-                Sciences Software Engineering Prize ($1000). I'm passionate
-                about leveraging technology to solve real-world problems and
-                create meaningful user experiences.
+                At the University of Adelaide I build AI and BCI experimental
+                systems such as NeuroFlip Reader (Vue 3 + FastAPI) and
+                Context-AI Tunes (GPT/Suno integration). My SecuFlow Miner
+                code-security platform won the School of Computer and
+                Mathematical Sciences Software Engineering Prize, and recent
+                research has been published at HCII 2025.
               </p>
             </div>
           </motion.div>
