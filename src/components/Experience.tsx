@@ -27,6 +27,7 @@ const experiences = [
       "Implemented user activity tracking to support experimental data analysis for research paper",
     ],
   },
+  /*
   {
     id: "frontend-mentor-itcast",
     title: "Front-end Development Mentor",
@@ -51,29 +52,29 @@ const experiences = [
       "Engineered core system functionalities including user authentication and role-based access control",
     ],
   },
+  */
   {
     id: "frontend-developer-ccb",
-    title: "Front-end Developer",
+    title: "Full-stack Developer",
     company: "CCB Fintech Co., Ltd.",
-    period: "Jun 2021 – Dec 2021",
+    period: "Jun 2021 – Oct 2022",
     description: [
-      "Developed and enhanced the Bank Financial Management System, providing form and process management functionalities",
-      "Engineered mobile modules using Vue.js and Vant UI components",
-      "Developed and migrated key functionalities for internal security information system",
-      "Created efficient data visualisation and query systems to optimise accessibility and user experience",
+      "Led full-stack delivery for multiple enterprise fintech initiatives using Java Spring Boot, Vue.js, and Redis",
+      "Recruitment Management System: Designed RESTful APIs with Spring Boot and Vue.js (Vuex + Element UI) frontend, adding Redis caching to cut database queries and response time",
+      "Bank Financial Management System: Implemented workflow processing, account management, and transaction logging services with Spring Boot plus dual web/mobile Vue.js + Vant UI interfaces",
+      "Internal Security Management System: Built Spring Security OAuth2 protected APIs, WebSocket + Redis Pub/Sub real-time alerts, and ECharts dashboards visualising threat patterns",
     ],
   },
   {
     id: "fullstack-engineer-powerchina",
-    title: "Full-stack Engineer",
+    title: "Full-stack Engineer (React & PHP Symfony)",
     company: "POWERCHINA Huadong Engineering Corporation Ltd.",
-    period: "Sep 2019 – Mar 2021",
+    period: "Sep 2019 – Jun 2021",
     description: [
-      "Led full-stack development of enterprise systems using Vue.js, Spring Boot, and Cordova",
-      "Developed an airport construction management system with workflow automation, data visualisation (ECharts), and 3D model rendering",
-      "Built OA systems to streamline user management and approval workflows",
-      "Spearheaded an internal workflow App, coordinating product research and cross-functional implementation",
-      "Delivered an employee report system integrating work analytics and travel statistics",
+      "Led React + PHP Symfony full-stack builds for enterprise management platforms, deploying on CentOS with Nginx and Docker",
+      "Infrastructure Management Systems: Delivered Symfony API + Doctrine ORM backend, MySQL data layer, and React dashboards with Ant Design, ECharts, and Three.js BIM/GIS visualisation",
+      "OA Workflow Management System: Designed multi-stage approval engine with RBAC security and React drag-and-drop workflow designer for non-technical users",
+      "Annual Employee Report System: Acted as product lead integrating HR/project metrics, automating report generation for 500+ employees through Symfony services and React analytics UI",
     ],
   },
 ];
